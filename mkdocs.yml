@@ -1,0 +1,282 @@
+site_name: 狙击美佐的笔记本
+site_url: https://note.jujimeizuo.cn/
+repo_name: jujimeizuo/note
+repo_url: https://github.com/rainytail/note/
+edit_uri: tree/master/docs
+site_description: 狙击美佐（jujimeizuo）的笔记本
+copyright: Copyright &copy; 2023-2024 <a href="https://github.com/jujimeizuo" target="_blank" rel="noopener">jujimeizuo</a>
+
+theme: 
+  name: 'material'
+  language: 'zh'
+  icon: 
+    logo: material/notebook-outline
+  custom_dir: overrides
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  font: false
+  palette:
+    - scheme: default
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jujimeizuo/
+    - icon: fontawesome/solid/rss
+      link: http://www.jujimeizuo.cn/blog/
+    - icon: fontawesome/solid/home
+      link: https://jujimeizuo.cn/
+  analytics:
+    provider: custom
+    property: G-CY82KV89G2
+
+extra_css:
+  # - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
+  # - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  # - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - https://cdn.jujimeizuo.cn/utils/katex.min.css
+  - https://cdn.jujimeizuo.cn/jbmono/jetbrainsmono.css
+  - https://cdn.jujimeizuo.cn/lxgw/lxgwscreen.css
+  - css/tasklist.css
+  - css/custom.css
+  - css/card.css
+  - css/flink.css
+  - css/changelog_extra.css
+  # - css/heti.css
+
+extra_javascript:
+  # - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js
+  - https://cdn.jujimeizuo.cn/utils/katex.min.js
+  - js/katex.js
+  # - js/heti.js
+  # - js/scheme.js # this is in template 'base.html'
+
+plugins:
+  - rss
+  - search
+  - callouts
+  - glightbox:
+      width: 80%
+  - encryptcontent:  # now just for one page, need to be improved
+      title_prefix: "🔒 "
+      remember_password: True 
+      default_expire_dalay: 48
+      decryption_failure_message: '密码错误'
+      encrypted_something:
+        mkdocs-encrypted-toc: [nav, class]
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - writeups/AAA.md
+  - changelog
+  - statistics:
+      page_check_metadata: comment
+  - toc
+  - heti
+  - linkbackward:
+      wait_time: 0
+      redirections:
+
+not_in_nav: todo.md
+
+nav:
+  - Home:
+    - index.md
+    - 更新记录: changelog.md
+    - 友链: links.md
+  - Computer Science:
+    - cs/index.md
+    - 编程语言:
+      - cs/pl/index.md
+      - C/C++:
+        - cs/pl/c_cpp/index.md
+        - C++ 系统知识: cs/pl/c_cpp/basic.md
+        - C++ STL: cs/pl/c_cpp/stl.md
+        - C++ 各种函数使用: cs/pl/c_cpp/function.md
+      - Python:
+        - cs/pl/python/index.md
+        - Python 语法基础: cs/pl/python/basic.md
+        - Numpy 科学计算库: cs/pl/python/numpy.md
+        - Python 虚拟环境: cs/pl/python/virtual.md
+      - Go:
+        - cs/pl/go/index.md
+        - Go 语法基础: cs/pl/go/basic.md
+        - gin框架 (TODO): cs/pl/go/gin.md
+      - Java:
+        - cs/pl/java/index.md
+        - Java 系统知识: cs/pl/java/basic.md
+        - SpringBoot: cs/pl/java/springboot.md
+    - 算法相关:
+      - 基础数据结构: cs/algorithm/basic-ds.md
+      - 算法设计与分析: cs/algorithm/design-analysis.md
+    - 人工智能基础:
+      - 模式识别: cs/ai/mode-recognition.md
+      - 机器学习: cs/ai/ml.md
+      - 神经网络与深度学习: cs/ai/dl.md
+    - 高性能计算:
+      - cs/hpc/index.md
+      - 概论: cs/hpc/outline.md
+      - 向量化计算: cs/hpc/vectorizecompute.md
+      - GPU 编程: cs/hpc/gpu.md
+      - MPI 基础: cs/hpc/mpi.md
+      - OpenMP 基础: cs/hpc/openmp.md
+    - 软件相关:
+      - cs/software/index.md
+      - 设计模式: cs/software/design-pattern.md
+      - 软件构件与体系结构: cs/software/sca.md
+      - COM 原理与应用: cs/software/compa.md
+      - 应用服务器原理与实现: cs/software/piaserver.md
+    - 数据库相关:
+      - MySQL: cs/db/mysql.md
+      - Redis:
+        - 数据类型: cs/db/redis/datatype.md
+        - 持久化: cs/db/redis/cjh.md
+        - 事务: cs/db/redis/work.md
+    - 杂项:
+      - RegEx 正则表达式: cs/others/regex.md
+  - 3dCV:
+    - cv/index.md
+    - 多视图几何:
+      - cv/mvg/index.md
+      - 2D 射影几何和变换: cv/mvg/pjt2d.md
+      - 3D 射影几何和变换: cv/mvg/pjt3d.md
+      - 估计——2D 射影变换: cv/mvg/est2d.md
+      - 算法评价和误差分析: cv/mvg/eval.md
+      - 摄像机模型: cv/mvg/camera-model.md
+      - 计算摄像机矩阵 P: cv/mvg/calc-p.md
+      - 单视图几何: cv/mvg/one-vg.md
+      - 对极几何和基本矩阵: cv/mvg/ag-fm.md
+      - 摄像机和结构的 3D 重构: cv/mvg/3dr-camera-structure.md
+    - SLAM:
+      - cv/slam/index.md
+      - 视觉 SLAM 十四讲:
+        - cv/slam/vslam14/index.md
+        - 初识 SLAM: cv/slam/vslam14/lec1.md
+        - 三维空间刚体运动: cv/slam/vslam14/lec2.md
+      - ORB-SLAM2: cv/slam/orbslam2.md
+      - DynaSLAM: cv/slam/dynaslam.md
+      - DS-SLAM: cv/slam/ds-slam.md
+      - Detect-SLAM: cv/slam/detect-slam.md
+      - FlowFusion: cv/slam/flowfusion.md
+      - RigidFusion: cv/slam/rigidfusion.md
+      - Crowd-SLAM: cv/slam/crowd-slam.md
+      - LET-NET: cv/slam/let-net.md
+      - DDN-SLAM: cv/slam/ddn-slam.md
+      - Co-SLAM: cv/slam/co-slam.md
+      - DeepV2D: cv/slam/deepv2d.md
+      - EndoscopyDepthEstimation: cv/slam/endoscopy-depth-estimation.md
+      - NID-SLAM: cv/slam/nid-slam.md
+      - iMAP: cv/slam/imap.md
+      - NICE-SLAM: cv/slam/nice-slam.md
+    - 三维点云:
+        - cv/pcd/index.md
+        - 点云配准:
+            - cv/pcd/pcr/index.md
+            - 前置知识: cv/pcd/pcr/prepare.md
+            - ICP: cv/pcd/pcr/icp.md
+    - 数据集:
+        - cv/dataset/index.md
+        - TUM: cv/dataset/tum.md
+        - KITTI: cv/dataset/kitti.md
+        - Waymo: cv/dataset/waymo.md
+    - 三维数据场可视化: cv/3d-visualization.md
+  - LLM:
+    - llm/index.md
+    - NLP:
+      - llm/nlp/index.md
+      - Word2Vec: llm/nlp/word2vec.md
+      - RNN: llm/nlp/rnns.md
+    - Transformer:
+      - llm/transformer/index.md
+      - Attention: llm/transformer/attention.md
+      - Transformer: llm/transformer/transformer.md
+      - BERT: llm/transformer/bert.md
+      - ViT: llm/transformer/vit.md
+    - 书生·浦语大模型实战营:
+      - llm/internlm/index.md
+      - 第一节: llm/internlm/lec1.md
+      - 第二节: llm/internlm/lec2.md
+      - 第三节: llm/internlm/lec3.md
+      - 第四节: llm/internlm/lec4.md
+      - 第五节: llm/internlm/lec5.md
+      - 第六节: llm/internlm/lec6.md
+    - 杂项:
+      - Prompt: llm/others/prompt.md
+      - 分布式训练: llm/others/dt.md
+  - Math Basis:
+    - mb/index.md
+    - 最优化理论与方法:
+      - mb/optimization-theory/index.md
+      - 最优化问题: mb/optimization-theory/lec1.md
+      - 直线搜索: mb/optimization-theory/lec2.md
+      - 无约束最优化的梯度方法: mb/optimization-theory/lec3.md
+    - 矩阵分析与应用:
+      - mb/maa/index.md
+      - 矩阵代数基础: mb/maa/lec1.md
+      - 特殊矩阵: mb/maa/lec2.md
+      - 矩阵微分: mb/maa/lec3.md
+    - 组合数学: mb/comb.md
+  - Utils:
+    - utils/index.md
+    - 工具收集: utils/utilsbox.md
+    - 命令行工具:
+      - Shell 命令相关: utils/shell.md
+      - Git 命令相关: utils/git.md
+      - Docker 命令相关: utils/docker.md
+      - gdb 命令相关: utils/gdb.md
+    - CI 工具:
+      - Github Action: utils/action.md
+    - 站点生成工具:
+      - reveal-md: utils/reveal-md.md
+      - gitbook: utils/gitbook.md
+      - mkdocs: utils/mkdocs.md
+      - hexo: utils/hexo.md

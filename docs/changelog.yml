@@ -1,0 +1,260 @@
+- "2024":
+  - "2024-8-8":
+    - newpage:
+        text: CV > SLAM > NICE-SLAM
+        href: /cv/slam/nice-slam/
+  - "2024-8-3":
+    - newpage:
+        text: CV > SLAM > iMAP
+        href: /cv/slam/imap/
+  - "2024-7-29":
+    - newpage:
+        text: CV > SLAM > NID-SLAM
+        href: /cv/slam/nid-slam/
+  - "2024-7-8":
+    - newpage:
+        text: CV > SLAM > EndoscpoyDepthEstimation
+        href: /cv/slam/endoscopy-depth-estimation/
+  - "2024-6-26":
+    - newpage:
+        text: CV > SLAM > DeepV2D
+        href: /cv/slam/deepv2d/
+  - "2024-6-21":
+    - newpage:
+        text: CV > SLAM > Co-SLAM
+        href: /cv/slam/co-slam/
+  - "2024-6-6":
+    - newpage:
+        text: CV > SLAM > DDN-SLAM
+        href: /cv/slam/ddn-slam/
+  - "2024-5-29":
+    - newpage:
+        text: CV > Dataset > Waymo
+        href: /cv/dataset/waymo/
+  - "2024-5-29":
+    - newpage:
+        text: CV > Dataset > KITTI
+        href: /cv/dataset/kitti/
+  - "2024-5-28":
+    - refactor: cp -r pcr prd/
+  - "2024-5-17":
+    - newpage:
+        text: CV > SLAM > LET-NET
+        href: /cv/slam/let-net/
+  - "2024-5-15":
+    - newpage:
+        text: CV > SLAM > Crowd-SLAM
+        href: /cv/slam/crowd-slam/
+  - "2024-4-4":
+    - newpage:
+        text: CV > SLAM > RigidFusion
+        href: /cv/slam/rigidfusion/
+  - "2024-3-27":
+    - newpage:
+        text: CV > SLAM > Detect-SLAM
+        href: /cv/slam/detect-slam/
+  - "2024-3-26":
+    - newpage:
+        text: CV > SLAM > FlowFusion
+        href: /cv/slam/flowfusion/
+  - "2024-3-20":
+    - newpage:
+        text: CV > SLAM > DS-SLAM
+        href: /cv/slam/ds-slam/
+  - "2024-3-20":
+    - newpage:
+        text: CV > SLAM > DynaSLAM
+        href: /cv/slam/dynaslam/
+  - "2024-3-20":
+    - newpage:
+        text: CV > SLAM > ORB-SLAM2
+        href: /cv/slam/orbslam2/
+  - "2024-3-20":
+    - newpage:
+        text: CV > Dataset > TUM
+        href: /cv/dataset/tum/
+  - "2024-1-24":
+    - newpage:
+        text: LLM & LVM > Transformer > ViT
+        href: /llm/transformer/vit/
+  - "2024-1-22":
+    - newpage:
+        text: CS > HPC > MPI 基础
+        href: /cs/hpc/mpi/
+  - "2024-1-20":
+    - newpage:
+        text: CS > HPC > OpenMP 基础
+        href: /cs/hpc/openmp/
+  - "2024-1-20":
+    - newpage:
+        text: LLM & LVM > InternLM > OpenCompass 大模型评测
+        href: /llm/internlm/lec6/
+  - "2024-1-18":
+    - newpage:
+        text: LLM & LVM > InternLM > LMDeploy 大模型量化部署实践
+        href: /llm/internlm/lec5/
+  - "2024-1-11":
+    - newpage:
+        text: LLM & LVM > InternLM > XTuner 大模型单卡低成本微调实战
+        href: /llm/internlm/lec4/
+  - "2024-1-8":
+    - newpage:
+        text: LLM & LVM > InternLM > 基于 InternLM 和 LangChain 搭建你的知识库
+        href: /llm/internlm/lec3/
+  - "2024-1-4":
+    - newpage:
+        text: LLM & LVM > InternLM > 轻松分钟玩转书生·浦语大模型趣味 Demo
+        href: /llm/internlm/lec2/
+  - "2024-1-3":
+    - newpage:
+        text: LLM & LVM > InternLM > 书生·浦语大模型全链路开源开放体系
+        href: /llm/internlm/lec1/
+- "2023":
+  - "2023-12-18":
+    - newpage:
+        text: LLM & LVM > 杂项 > 分布式训练
+        href: /llm/others/dt/
+  - "2023-12-14":
+    - newpage:
+        text: LLM & LVM > 杂项 > Prompt
+        href: /llm/others/prompt/
+  - "2023-12-13":
+    - newpage:
+        text: LLM & LVM > Transformer > BERT
+        href: /llm/transformer/bert/
+  - "2023-12-10":
+    - newpage:
+        text: LLM & LVM > Transformer > Transformer
+        href: /llm/transformer/transformer/
+  - "2023-12-09":
+    - newpage:
+        text: LLM & LVM > Transformer > attention
+        href: /llm/transformer/attention/
+  - "2023-12-08":
+    - newpage:
+        text: LLM & LVM > NLP > RNNs
+        href: /llm/nlp/rnns/
+  - "2023-12-07":
+    - newpage:
+        text: LLM & LVM > NLP > Word2Vec
+        href: /llm/nlp/word2vec/
+  - "2023-12-05":
+    - newpage:
+        text: CV & Robot > 点云配准 > ICP
+        href: /cv/pcr/icp/
+  - "2023-12-04":
+    - newpage:
+        text: CV & Robot > 点云配准 > 前置知识
+        href: /cv/pcr/prepare/
+  - "2023-12-03":
+    - newpage:
+        text: CV & Robot > 三维数据场可视化
+        href: /cv/3d-visualization/
+  - "2023-10-09":
+    - newpage:
+        text: 数理基础 > 最优化理论与方法 > 无约束最优化的梯度方法
+        href: /mb/optimization-theory/lec3/
+  - "2023-10-06":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 摄像机和结构的 3D 重构
+        href: /cv/mvg/3dr-camera-structure/
+    - newpage:
+        text: CV & Robot > 多视图几何 > 对极几何和基本矩阵 
+        href: /cv/mvg/ag-fm/
+  - "2023-10-05":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 单视图几何
+        href: /cv/mvg/one-vg/
+    - newpage:
+        text: CV & Robot > 多视图几何 > 计算摄像机矩阵 P
+        href: /cv/mvg/calc-p/
+  - "2023-10-04":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 摄像机模型
+        href: /cv/mvg/camera-model/
+    - newpage:
+        text: CV & Robot > 多视图几何 > 算法评价和误差分析
+        href: /cv/mvg/eval/
+  - "2023-10-03":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 估计——2D 射影变换
+        href: /cv/mvg/est2d/
+    - newpage:
+        text: CV & Robot > SLAM > 视觉 SLAM 十四讲 > 三维空间刚体运动
+        href: /cv/slam/vslam14/lec2/
+  - "2023-09-30":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 3D 射影几何变换
+        href: /cv/mvg/pjt3d/
+  - "2023-09-17":
+    - newpage:
+        text: 数理基础 > 最优化理论与方法 > 直线搜索
+        href: /mb/optimization-theory/lec2/
+  - "2023-09-24":
+    - newpage:
+        text: CS > 编程语言 > Python > Numpy
+        href: /cs/pl/python/numpy/
+  - "2023-09-22":
+    - newpage:
+        text: CS > 人工智能 > 机器学习
+        href: /cs/ai/ml/
+  - "2023-09-17":
+    - newpage:
+        text: CS > 人工智能 > 模式识别
+        href: /cs/ai/mode-recognition/
+  - "2023-09-16":
+    - newpage:
+        text: 数理基础 > 矩阵分析与应用 > 矩阵代数基础
+        href: /mb/maa/lec1
+  - "2023-09-13":
+    - newpage:
+        text: CS > 软件相关 > 软件构件与体系结构
+        href: /cs/software/sca/
+    - newpage:
+        text: CS > 软件相关 > COM 原理与应用
+        href: /cs/software/compa/
+  - "2023-09-12":
+    - newpage:
+        text: CS > 人工智能 > 神经网络与深度学习
+        href: /cs/ai/dl/
+    - newpage:
+        text: CS > 算法相关 > 算法设计与分析
+        href: /cs/algorithm/design-analysis/
+  - "2023-09-11":
+    - newpage:
+        text: 数理基础 > 最优化理论与方法 > 最优化问题
+        href: /mb/optimization-theory/lec1/
+  - "2023-09-10":
+    - newpage:
+        text:  Utils > 站点生成工具 > reveal-md
+        href: /utils/reveal-md/
+  - "2023-09-09":
+    - newpage:
+        text: CS > 编程语言 > Go > Go 语法基础
+        href: /cs/pl/go/basic/
+  - "2023-09-03":
+    - newpage:
+        text: CV & Robot > 多视图几何 > 2D 射影几何变换
+        href: /cv/mvg/pjt2d/
+  - "2023-09-01":
+    - newpage:
+        text: Utils > 工具收集
+        href: /utils/
+    - newpage:
+        text: Utils > 命令行工具 > Docker 命令相关
+        href: /utils/docker/utilsbox/
+    - pageupdate:
+        text: 新增 awesome_git_log 命令
+        href: /utils/git/
+    - newpage:
+        text: Utils > 命令行工具 > Shell 命令相关
+        href: /utils/shell/
+  - "2023-08-30":
+    - newpage:
+        text: Utils > 命令行工具 > gdb 命令相关
+        href: /utils/gdb/
+    - newpage:
+        text: Utils > 命令行工具 > Git 命令相关
+        href: /utils/git/
+  - "2023-08-26":
+    - refactor: init notebook
